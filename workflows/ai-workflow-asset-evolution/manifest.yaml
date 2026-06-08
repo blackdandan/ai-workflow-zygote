@@ -1,0 +1,8 @@
+# 中文注释：资产演化 Workflow 的 manifest。
+id: ai-workflow-asset-evolution
+type: workflow
+status: active
+description: 在已有系统中新增、更新和沉淀 AI Workflow 资产。
+primary_skill: skills/workflow-asset-evolution/SKILL.md
+rules:
+  - rules/workflow/asset-evolution.md

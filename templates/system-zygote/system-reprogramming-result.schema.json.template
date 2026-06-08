@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "System Reprogramming Result",
+  "type": "object",
+  "required": ["status", "target_path", "diagnosis", "migration_plan", "meta_capabilities", "validation", "errors"],
+  "properties": {
+    "status": { "type": "string", "enum": ["diagnosed", "planned", "reprogrammed", "failed"] },
+    "target_path": { "type": "string" },
+    "diagnosis": { "type": "object", "additionalProperties": true },
+    "migration_plan": { "type": "object", "additionalProperties": true },
+    "meta_capabilities": { "type": "object", "additionalProperties": { "type": "boolean" } },
+    "validation": { "type": "object", "additionalProperties": true },
+    "errors": { "type": "array", "items": { "type": "string" } }
+  }
+}

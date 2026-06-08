@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "System Zygote Evolution Result",
+  "type": "object",
+  "required": ["status", "changed_files", "meta_capability_check", "regression_check", "errors"],
+  "properties": {
+    "status": { "type": "string", "enum": ["planned", "updated", "failed"] },
+    "changed_files": { "type": "array", "items": { "type": "string" } },
+    "meta_capability_check": { "type": "object", "additionalProperties": true },
+    "regression_check": { "type": "object", "additionalProperties": true },
+    "errors": { "type": "array", "items": { "type": "string" } }
+  }
+}

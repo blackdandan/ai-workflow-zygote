@@ -1,0 +1,13 @@
+# 中文注释：系统胚胎 Workflow 的 manifest。
+id: ai-workflow-system-zygote
+type: workflow
+status: active
+description: 从零创建下一代独立 AI Workflow 工程。
+primary_skill: skills/system-zygote/SKILL.md
+agents:
+  - agents/factory/system-zygote-agent/AGENT.md
+rules:
+  - rules/workflow/system-zygote.md
+executor:
+  path: workflows/ai-workflow-system-zygote/executors/init_system.py
+  runtime: python3

@@ -1,0 +1,14 @@
+id: ai-workflow-system-zygote-evolution
+type: workflow
+status: active
+description: 修改、升级和验证 system zygote 生成机制。
+primary_skill: skills/system-zygote-evolution/SKILL.md
+agents:
+  - agents/factory/zygote-evolution-agent/AGENT.md
+rules:
+  - rules/workflow/system-zygote-evolution.md
+schemas:
+  - schemas/workflow/system-zygote-evolution-result.schema.json
+executor:
+  path: null
+  runtime: none

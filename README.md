@@ -1,0 +1,64 @@
+# AI Workflow Zygote
+
+<!-- 中文注释：本文件是新 AI Workflow 工程的人类入口说明。 -->
+
+`AI Workflow Zygote` 是一套面向 AI workflow systems 的 AI Workflow 工程。
+
+## 项目定位
+
+AI Workflow Zygote 是一个 HARNESS-first 的 AI Workflow 孵化器，用于生成、分化和自我升级可路由、可验证、可反哺的 AI Workflow 系统。
+
+## 系统目标
+
+提供一套通用 AI Workflow 系统胚胎，用于独立生成、演化、重编程和验证 AI Workflow 工程。
+
+## 目标使用者
+
+AI workflow builders
+
+## 运行模型
+
+```text
+User Prompt
+  -> ai-context / Entry
+  -> Router
+  -> Workflow
+  -> Skill
+  -> Agent / Executor
+  -> Structured Output
+  -> Validation / Eval
+  -> Trace / Feedback
+```
+
+## 顶层目录
+
+```text
+ai-context/     AI 启动入口、任务路由和未命中处理
+workflows/      端到端工作流
+skills/         可复用流程节点
+agents/         智能执行节点
+rules/          横切约束
+schemas/        输入输出契约
+templates/      交付物模板
+knowledge/      背景知识和参考资产
+adapters/       AI 宿主环境接入方式
+evals/          验收和评估标准
+docs/           给人类阅读的解释文档
+build-process/  本系统自身构建记录
+```
+
+## 四个元能力
+
+```text
+ai-workflow-system-zygote
+  从零生成下一代 AI Workflow 系统
+
+ai-workflow-system-zygote-evolution
+  修改、升级和验证 zygote 生成机制
+
+ai-workflow-asset-evolution
+  在已有系统中演化 Workflow、Skill、Agent、Rule、Schema、Template 等资产
+
+ai-workflow-system-reprogramming
+  将旧项目、不完整 AI 项目或旧 zygote 生成物重编程为完整 AI Workflow 系统
+```

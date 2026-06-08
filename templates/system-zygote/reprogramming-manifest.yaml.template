@@ -1,0 +1,14 @@
+id: ai-workflow-system-reprogramming
+type: workflow
+status: active
+description: 将旧项目或不完整 AI 项目重编程为完整 AI Workflow 系统。
+primary_skill: skills/system-reprogramming/SKILL.md
+agents:
+  - agents/factory/system-reprogramming-agent/AGENT.md
+rules:
+  - rules/workflow/system-reprogramming.md
+schemas:
+  - schemas/workflow/system-reprogramming-result.schema.json
+executor:
+  path: null
+  runtime: none
