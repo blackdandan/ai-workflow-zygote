@@ -16,6 +16,20 @@ AI Workflow Zygote 是一个 HARNESS-first 的 AI Workflow 孵化器，用于生
 
 AI workflow builders
 
+## 接入方式
+
+本仓库推荐作为临时孵化器接入目标项目，而不是作为长期运行依赖。
+
+典型方式：
+
+1. 在需要新建或升级 AI Workflow 系统时，clone 本仓库。
+2. 将本仓库文件复制到目标项目的工作目录中，或在目标项目旁作为临时工作副本使用。
+3. 通过 `ai-context/ENTRY.md` 启动 Router，并按命中的 Workflow 执行新建、重编程或升级。
+4. 执行完成后，目标项目应已经拥有自己的 zygote、元能力、Harness、Eval 和本地资产。
+5. 用户可自行删除临时复制进来的母体文件或临时 clone 目录。
+
+已有项目同步本仓库升级时，应使用 `ai-workflow-system-reprogramming`：它负责识别目标项目中既有的 zygote、Workflow、Skill、Agent、Rule、Schema、Template、Harness 和 Eval，并在保留本地演化内容的前提下补齐或迁移新版元能力。
+
 ## 运行模型
 
 ```text
